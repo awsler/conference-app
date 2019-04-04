@@ -1,0 +1,48 @@
+type User @model {
+  id: ID!
+  token: String!
+  name: String!
+  surname: String
+  email: String
+  sessions: [Event] @connection
+}
+
+type Event @model {
+  id: ID!
+  type: EventType!
+  title: String!
+  description: String
+  timeRange: TimeRange!
+  room: Room! @connection
+  topics: [String]
+  speakers: [User] @connection
+  participants: [User] @connection
+  ratings: [Rating] @connection
+  averageRating: Float
+}
+
+type Room @model {
+  id: ID!
+  name: String!
+  capacity: Int
+}
+
+type Rating @model {
+  id: ID!
+  owner: User!
+  rating: Int!
+}
+
+type TimeRange {
+  start: String!
+  end: String!
+  isInPast: Boolean!
+}
+
+enum EventType {
+  TALK
+  STAND
+  SESSION
+  THINKTHANK
+  OTHER
+}

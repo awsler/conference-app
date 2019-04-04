@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "conference-app-20190328233023-authRole",
+            "UnauthRoleArn": "arn:aws:iam::659760251755:role/conference-app-20190328233023-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::659760251755:role/conference-app-20190328233023-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "conference-app-20190328233023-deployment",
+            "UnauthRoleName": "conference-app-20190328233023-unauthRole",
+            "StackName": "conference-app-20190328233023",
+            "StackId": "arn:aws:cloudformation:eu-central-1:659760251755:stack/conference-app-20190328233023/145309e0-51a9-11e9-a63b-06a005f7522e"
+        }
+    }
+}

@@ -1,0 +1,4 @@
+{
+    "AppSyncApiName": "confapp",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST"
+}
